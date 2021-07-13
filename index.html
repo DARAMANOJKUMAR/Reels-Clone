@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"/>
+</head>
+<body>
+    <div class="appvideos">
+        <div class="video">
+            <video src="video1.mp4"  class="videoplayer"></video>
+             
+            <div class="videosidebar">
+                <div class="videosidebarbutton">
+                    <span class="material-icons">favorite_border</span>
+                        <p>120k</p>
+
+                </div>
+                <div class="videosidebarbutton">
+                    <span class="material-icons">chat</span>
+                        <p>120</p>
+
+                </div>
+                <div class="videosidebarbutton">
+                    <span class="material-icons">share</span>
+                        <p>77</p>
+
+                </div>
+
+            </div>
+            
+            <div class="videofooter">
+                <div class="videofootertext">
+                    <h3>Manoj</h3>
+                    <p class="videofooterdescription">Trending video</p>
+                    
+                    <div class="tickericon">
+                        <span class="material-icons-outlined videofooter ticker">
+                            music_note
+                            </span>
+                            <marquee behavior="" direction="">Song Name</marquee>
+
+                    </div>
+                </div>
+                <img class="videofooterimg" src="https://static.thenounproject.com/png/934821-200.png" alt="">
+            </div>
+
+        </div>
+        <div class="video">
+            <video src="video2.mp4"  class="videoplayer"></video>
+             
+            <div class="videosidebar">
+                <div class="videosidebarbutton">
+                    <span class="material-icons">favorite_border</span>
+                        <p>120k</p>
+
+                </div>
+                <div class="videosidebarbutton">
+                    <span class="material-icons">chat</span>
+                        <p>120</p>
+
+                </div>
+                <div class="videosidebarbutton">
+                    <span class="material-icons">share</span>
+                        <p>77</p>
+
+                </div>
+
+            </div>
+            
+            <div class="videofooter">
+                <div class="videofootertext">
+                    <h3>Manoj</h3>
+                    <p class="videofooterdescription">Trending video</p>
+                    
+                    <div class="tickericon">
+                        <span class="material-icons-outlined videofooter ticker">
+                            music_note
+                            </span>
+                            <marquee behavior="" direction="">Song Name</marquee>
+
+                    </div>
+                </div>
+                <img class="videofooterimg" src="https://static.thenounproject.com/png/934821-200.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const videos=document.querySelectorAll('video');
+        for(const video of videos)
+        {
+            video.addEventListener('click',function(){
+                if(video.paused){
+                    video.play();
+                }
+                else{
+                    video.pause();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
